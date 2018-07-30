@@ -20,6 +20,6 @@ console.log(currentWord);
 
 //Update HTML function
 function updateHtml() {
-  
+
   };
   

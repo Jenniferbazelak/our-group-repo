@@ -1,29 +1,47 @@
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <title>Word Guess Game</title>
-    <script src="assests/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="game.js"></script>
 </head>
-
 <body>
-
-    <div id="game">
-
-        <h1>Cardi B's Word Guess Game</h1>
-
-        <h2>Press any key to get started!</h2>
-
-        <p id="wins">Wins </p>
-
-        <p id="letter-spaces"></p>
-
-        <p id="guesses-left">Number of Guesses Remaining </p>
-
-        <p>Letters Already Guessed </p>
-
+    <div class="jumbotron">
+        <h1 class="display-4">Word Guess Game</h1>
+        <p class="lead">Try to guess the word below. If you get a letter right, it will fill in the blank. If you get a letter wrong, your guesses remaining will go down. You have eight guesses before you lose. Press any letter to begin!</p>
     </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Current Word</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="current-word"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Letters Guessed</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="letters-guessed"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Game Count</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Wins: <span id="wins"></span></li>
+                        <li class="list-group-item">Losses: <span id="losses"></span></li>
+                        <li class="list-group-item">Guesses Remaining: <span id="guesses-remaining"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
