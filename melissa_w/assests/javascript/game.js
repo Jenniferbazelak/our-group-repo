@@ -23,8 +23,10 @@ console.log(currentWord);
 //Update HTML function
 function updateHtml() {
 
-  };
-  //these are my java changes
+  
+
+};
+
 
 
 // alert if not a letter
